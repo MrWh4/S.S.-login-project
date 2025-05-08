@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin paneli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container admin-container">
+        <div class="card admin-card animate__animated animate__fadeIn">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="title">Admin paneli</h1>
+            
+            <div id="adminLogin" class="admin-login">
+                <div class="form-group animate__animated animate__fadeInUp">
+                    <label for="adminPassword"><i class="fas fa-key"></i> Admin paroli</label>
+                    <input type="password" id="adminPassword" name="adminPassword">
+                </div>
+                <button id="loginBtn" class="btn admin-btn animate__animated animate__bounceIn">
+                    <i class="fas fa-sign-in-alt"></i> Kirish
+                </button>
+            </div>
+            
+            <div id="adminPanel" class="admin-panel" style="display: none;">
+                <h2 class="subtitle animate__animated animate__fadeInDown">Ro'yxatdan o'tgan foydalanuvchilar</h2>
+                
+                <div class="search-bar animate__animated animate__fadeIn">
+                    <input type="text" id="searchInput" placeholder="Qidirish...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div id="usersList" class="users-list">
+                    <!-- Foydalanuvchilar ro'yxati JavaScript orqali to'ldiriladi -->
+                    <div class="no-users animate__animated animate__fadeIn">
+                        <i class="fas fa-users-slash"></i>
+                        <p>Hozircha foydalanuvchilar yo'q</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

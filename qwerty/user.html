@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foydalanuvchi ro'yxatdan o'tishi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card user-card animate__animated animate__fadeInUp">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="title">Ro'yxatdan o'tish</h1>
+            
+            <form id="userForm" class="registration-form">
+                <div class="form-group animate__animated animate__fadeInLeft">
+                    <label for="firstName"><i class="fas fa-user"></i> Ism</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group animate__animated animate__fadeInRight" style="animation-delay: 0.1s">
+                    <label for="lastName"><i class="fas fa-user"></i> Familiya</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group animate__animated animate__fadeInLeft" style="animation-delay: 0.2s">
+                    <label for="phone"><i class="fas fa-phone"></i> Telefon raqam</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group animate__animated animate__fadeInRight" style="animation-delay: 0.3s">
+                    <label for="userPhoto"><i class="fas fa-camera"></i> Rasm</label>
+                    <input type="file" id="userPhoto" name="userPhoto" accept="image/*" required>
+                    <div id="photoPreview" class="preview-container"></div>
+                </div>
+                
+                <div class="form-group animate__animated animate__fadeInLeft" style="animation-delay: 0.4s">
+                    <label for="passport"><i class="fas fa-id-card"></i> Passport</label>
+                    <input type="file" id="passport" name="passport" accept="image/*" required>
+                    <div id="passportPreview" class="preview-container"></div>
+                </div>
+                
+                <button type="submit" class="btn submit-btn animate__animated animate__bounceIn" style="animation-delay: 0.5s">
+                    <i class="fas fa-paper-plane"></i> Yuborish
+                </button>
+            </form>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <p>Ma'lumotlar muvaffaqiyatli yuborildi!</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
